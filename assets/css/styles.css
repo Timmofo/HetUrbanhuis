@@ -39,15 +39,6 @@ a:hover{
     color: #DB5F4C !important;
 }
 
-.shoppingcarticon{
-    font-size: 1.5em;
-    padding: auto 0;
-}
-
-.shoppingcarticon:hover{
-    color: #DB5F4C;
-}
-
 #navbarfrontpage, #navbarmain{
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
@@ -63,13 +54,13 @@ a:hover{
 }
 
 /*Navbar Frontpage*/
-#navbarfrontpage{
-    transition: background-color 700ms ease-in;
+.navbarfrontpage__background--scrolled{
+    background-color: #fff;
+    transition: background-color 1500ms ease-in;
 }
 
-.navbarfrontpage__container{
-    padding: 2% 0;
-    transition: padding 200ms ease-out;
+#navbarfrontpage{
+    transition: background-color 700ms ease-in;
 }
 
 .navbarfrontpage__link{
@@ -82,19 +73,19 @@ a:hover{
     transition: color 100ms ease-out;
 }
 
-.navbarfrontpage__background--scrolled{
-    background-color: white;
-    transition: background-color 1500ms ease-in;
+.navbarfrontpage__link--scrolled{
+    color: #000;
+    transition: color 50ms ease-in; 
+}
+
+.navbarfrontpage__container{
+    padding: 2% 0;
+    transition: padding 200ms ease-out;
 }
 
 .navbarfrontpage__container--scrolled{
     padding: 1% 0 !important;
     transition: padding 800ms ease-in;
-}
-
-.navbarfrontpage__link--scrolled{
-    color: black;
-    transition: color 50ms ease-in; 
 }
 
 #navbarfrontpage__brand{
@@ -108,27 +99,33 @@ a:hover{
 
 .navbarfrontpage__icon{
     padding-top: 3px;
-    color: white;
+    font-size: 1.5rem;
+    color: #fff;
     transition: color 100ms ease-out; 
 }
 
 .navbarfrontpage__icon--scrolled{
-    color: black;
+    color: #000;
     transition: color 400ms ease-out; 
 }
 
-.frontpage__shoppingcart1{
-    display: inline-block;
+.navbar-toggler:focus,
+.navbar-toggler:active{
+    outline: none !important;
+    box-shadow: none;
 }
 
+.frontpage__shoppingcart1,
 .frontpage__shoppingcart1--scrolled{
     display: inline-block;
 }
 
-.frontpage__shoppingcart2{
-    display: none;
+.frontpage__shoppingcart1:hover,
+.frontpage__shoppingcart1:active{
+    color: #DB5F4C;
 }
 
+.frontpage__shoppingcart2,
 .frontpage__shoppingcart2--scrolled{
     display: none;
 }
@@ -137,7 +134,7 @@ a:hover{
     .frontpage__shoppingcart1{
         display: none;
     }
-
+    
     .frontpage__shoppingcart2{
         display: inline-block;
     }
@@ -318,7 +315,14 @@ a:hover{
 /*Banners*/
 .banner__green{
     background: #89B57B;
-    padding: 1% 0; 
+    padding: 1% 0;
+    margin-top: 1%;
+}
+
+@media (min-width: 992px) {
+    .banner__green {
+        margin-top: 0;
+    }
 }
 
 .banner__green__content {
@@ -640,6 +644,10 @@ a:hover{
 
 .wpcf7-form p{
     margin: 0;
+}
+
+.wpcf7-form-control{
+    width: 100%;
 }
 
 .wpcf7-textarea, .wpcf7-text{
