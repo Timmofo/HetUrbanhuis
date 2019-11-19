@@ -61,7 +61,7 @@
 
             ?>
                 <div class="row">
-                    <div class="col-12 col-lg-6 d-flex p-0 mb-3 pl-3 pl-lg-0">
+                    <div class="col-12 col-lg-6 d-flex p-0 mb-3 pl-3 pl-lg-0 order-2 order-lg-1">
                         <div class="<?php if($rows==0){echo 'col-12';} else {echo 'col-8';} ?> pl-0 pr-1 pr-lg-0">
                             <div> 
                                 <img id="product__image1" class="product__image1" src="<?php echo $first_img[0] ?>">
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
                         <h1><?php echo $current_product->get_title(); ?></h1>
                         <p class="singleproduct__price">€<?php echo $current_product->get_price(); ?></p>
 
