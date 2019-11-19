@@ -9,7 +9,7 @@
 
     <nav id="navbarmain" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <button class="navbar-toggler pt-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <i class="fas fa-bars navbarmain__icon"></i>
                 </span>
