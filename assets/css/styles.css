@@ -539,9 +539,9 @@ a:hover{
 }
 
 .blogpage__searchbutton:active{
-    background: #FFB600;
+    background: #5F6C65;
     border-radius: 2.5px 2.5px 2.5px 2.5px;
-    border: solid #FFB600;
+    border: solid #5F6C65;
 }
 
 .blogpage__searchicon{
