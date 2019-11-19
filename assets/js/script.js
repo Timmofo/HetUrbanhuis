@@ -167,3 +167,21 @@ if(current_url.search('/cart/')>=0){
   document.getElementById("shoppingcarticon1").classList.add("activenav");
   document.getElementById("shoppingcarticon2").classList.add("activenav");
 }
+
+//Normalizes front-page carousel height
+function normalizeSlideHeights() {
+  $('.carousel').each(function(){
+    var items = $('.carousel-item', this);
+    // reset the height
+    items.css('min-height', 0);
+    // set the height
+    var maxHeight = Math.max.apply(null, 
+        items.map(function(){
+            return $(this).outerHeight()}).get() );
+    items.css('min-height', maxHeight + 'px');
+  })
+}
+
+$(window).on(
+  'load resize orientationchange', 
+  normalizeSlideHeights);

@@ -94,7 +94,9 @@
                 <?php
             }
             ?>
-            <li class="blog__categorysearch p-0"><?php get_search_form(); ?></li>
+            <li class="blog__categorysearch p-0">               
+                <?php get_search_form(); ?>
+            </li>
         </ul>
     </div>
 
