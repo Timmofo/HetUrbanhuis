@@ -1,5 +1,5 @@
 <!-- Tells wordpress the page template name -->
-<?php /* Template Name: Pagina */ ?>
+<?php /* Template Name: Search */ ?>
 
 <!-- Get Head file -->
 <?php get_template_part('template-parts/header/header') ?>
