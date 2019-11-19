@@ -20,7 +20,7 @@
 
 <div class="container containerpadding row px-3 px-md-0 my-3">
     <div class="col-12 col-lg-3 p-0">
-        <h1 class="col-12 mb-3 p-2 p-lg-0">Shop</h1>
+        <h1 class="col-12 p-0 p-lg-0 px-md-3 my-3">Shop</h1>
         <?php
             //parent category inputs
             $prodcat_featured = get_term_by('name', 'featured', 'product_cat');
