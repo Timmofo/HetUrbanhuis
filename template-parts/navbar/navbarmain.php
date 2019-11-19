@@ -9,12 +9,12 @@
 
     <nav id="navbarmain" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler pt-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <i class="fas fa-bars navbarmain__icon"></i>
                 </span>
             </button>
-            <a class="navbar-brand" id="navbarmain__brand" href="http://testomgeving.heturbanhuis.nl">
+            <a class="navbar-brand pb-3 pb-lg-0 m-0" id="navbarmain__brand" href="http://testomgeving.heturbanhuis.nl">
                 <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/images/logo_heturbanhuis.png" width="auto" height="30rem" alt="logo het urbanhuis">
             </a>
             <a class="navbarmain__shoppingcart1 px-3" href="http://testomgeving.heturbanhuis.nl/cart"> 
