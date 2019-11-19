@@ -1,7 +1,7 @@
     <!-- NAVBAR -->
     <nav id="navbarfrontpage" class="navbar navbar-expand-lg fixed-top">
         <div class="navbarfrontpage__container container">
-            <button class="navbar-toggler pt-2 pb-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <i class="fas fa-bars navbarfrontpage__icon"></i>
                 </span>
