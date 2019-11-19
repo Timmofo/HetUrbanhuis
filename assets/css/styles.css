@@ -517,6 +517,28 @@ a:hover{
     padding-right: 5%;    
 }
 
+
+.search{
+    background: #EFEFEF;
+    border: solid #85998E 1.5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.search-field{
+    background: #EFEFEF;
+    border: none;
+}
+
+.blogpage__searchbutton{
+    background: #85998E;
+    border-radius: relative;
+    border: solid #85998E 1.5px;
+}
+
+.blogpage__searchicon{
+    color: #EFEFEF;
+}
+
 .blog__post{
     padding: 3% 2%;
     height: auto;
