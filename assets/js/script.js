@@ -3,28 +3,28 @@ var current_url = window.location.href; //used in breadcrumbs and single-product
 
 /* Navbar for frontpage changes on scroll */
 
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $("#navbarfrontpage__brand");
-    $nav.toggleClass('navbarfrontpage__brand--scrolled', $(this).scrollTop() > 1);
+jQuery(function () {
+  jQuery(document).scroll(function () {
+    var $nav = jQuery("#navbarfrontpage__brand");
+    $nav.toggleClass('navbarfrontpage__brand--scrolled', jQuery(this).scrollTop() > 1);
 
-    var $nav = $("#navbarfrontpage");
-    $nav.toggleClass('navbarfrontpage__background--scrolled', $(this).scrollTop() > 1);
+    var $nav = jQuery("#navbarfrontpage");
+    $nav.toggleClass('navbarfrontpage__background--scrolled', jQuery(this).scrollTop() > 1);
 
-    var $nav = $(".navbarfrontpage__link");
-    $nav.toggleClass('navbarfrontpage__link--scrolled', $(this).scrollTop() > 1);
+    var $nav = jQuery(".navbarfrontpage__link");
+    $nav.toggleClass('navbarfrontpage__link--scrolled', jQuery(this).scrollTop() > 1);
 
-    var $nav = $(".navbarfrontpage__icon");
-    $nav.toggleClass('navbarfrontpage__icon--scrolled', $(this).scrollTop() > 1);
+    var $nav = jQuery(".navbarfrontpage__icon");
+    $nav.toggleClass('navbarfrontpage__icon--scrolled', jQuery(this).scrollTop() > 1);
 
-    var $nav = $(".navbarfrontpage__container");
-    $nav.toggleClass('navbarfrontpage__container--scrolled', $(this).scrollTop() > 1);
+    var $nav = jQuery(".navbarfrontpage__container");
+    $nav.toggleClass('navbarfrontpage__container--scrolled', jQuery(this).scrollTop() > 1);
 
-    var $nav = $(".frontpage__shoppingcart1");
-    $nav.toggleClass('frontpage__shoppingcart1--scrolled', $(this).scrollTop() > 1);
+    var $nav = jQuery(".frontpage__shoppingcart1");
+    $nav.toggleClass('frontpage__shoppingcart1--scrolled', jQuery(this).scrollTop() > 1);
 
-    var $nav = $(".frontpage__shoppingcart2");
-    $nav.toggleClass('frontpage__shoppingcart2--scrolled', $(this).scrollTop() > 1);
+    var $nav = jQuery(".frontpage__shoppingcart2");
+    $nav.toggleClass('frontpage__shoppingcart2--scrolled', jQuery(this).scrollTop() > 1);
   });
 });
 
@@ -117,7 +117,7 @@ for (i = 0; i < coll.length; i++) {
     els.inc = el.next();
 
     el.each(function() {
-      init($(this));
+      init(jQuery(this));
     });
 
     function init(el) {
@@ -144,7 +144,7 @@ for (i = 0; i < coll.length; i++) {
   }
 })();
 
-inputNumber($('.input-number'));
+inputNumber(jQuery('.input-number'));
 
 /*Breadcrumbs*/
 if(current_url.search('/winkel/')>=0 || current_url.search('/product/')>=0 || current_url.search('/product-category/')>=0){
@@ -170,18 +170,18 @@ if(current_url.search('/cart/')>=0){
 
 //Normalizes front-page carousel height
 function normalizeSlideHeights() {
-  $('.carousel').each(function(){
-    var items = $('.carousel-item', this);
+  jQuery('.carousel').each(function(){
+    var items = jQuery('.carousel-item', this);
     // reset the height
     items.css('min-height', 0);
     // set the height
     var maxHeight = Math.max.apply(null, 
         items.map(function(){
-            return $(this).outerHeight()}).get() );
+            return jQuery(this).outerHeight()}).get() );
     items.css('min-height', maxHeight + 'px');
   })
 }
 
-$(window).on(
+jQuery(window).on(
   'load resize orientationchange', 
   normalizeSlideHeights);
