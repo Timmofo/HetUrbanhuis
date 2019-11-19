@@ -640,6 +640,10 @@ a:hover{
     margin: 0;
 }
 
+.wpcf7-form-control{
+    width: 100%;
+}
+
 .wpcf7-textarea, .wpcf7-text{
     border: 1px solid #85998E;
     border-radius: 7px;
