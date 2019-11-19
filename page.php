@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<div class="container containerpadding">
+<div class="container containerpadding px-3 px-lg-0">
     <?php
         if (have_posts()):
             while (have_posts()) : the_post();
