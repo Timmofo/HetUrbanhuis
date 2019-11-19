@@ -20,14 +20,14 @@
 <div class="container containerpadding">
     <div class="row">
 
-        <div class="col-12 col-md-6 my-3 pl-3 pl-lg-0 order-2 order-md-1">
-            <h1 class="text-center text-lg-left">Contactgegevens</h1>
-            <p class="text-center text-lg-left">
+        <div class="col-12 col-lg-6 text-center text-lg-left pl-lg-0 my-3 order-2 order-lg-1">
+            <h1 class="mb-2">Contactgegevens</h1>
+            <p>
                 Het UrbanHuis
                 <br>
                 E-mail: info@heturbanhuis.nl
             </p>
-            <p class="text-center text-lg-left">
+            <p>
                 KvK nummer: 737 387 00
                 <br>
                 BTW nummer:  NL210575050B01
@@ -37,7 +37,7 @@
         
         </div>
 
-        <div class="col-12 col-lg-6 my-3 order-1 order-md-2">
+        <div class="col-12 col-lg-6 pr-lg-0 my-3 order-1 order-lg-2">
             <div class="contact__contactform">
                 <h2>Stel hier je vraag!</h2>
                 <p>
