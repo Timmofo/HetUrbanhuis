@@ -79,7 +79,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-1 order-lg-2">
                         <h1><?php echo $current_product->get_title(); ?></h1>
                         <p class="singleproduct__price">€<?php echo $current_product->get_price(); ?></p>
 
