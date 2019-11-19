@@ -99,6 +99,7 @@ a:hover{
 
 .navbarfrontpage__icon{
     padding-top: 3px;
+    font-size: 1.5rem;
     color: #fff;
     transition: color 100ms ease-out; 
 }
