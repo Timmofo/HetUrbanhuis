@@ -6,6 +6,9 @@ add_theme_support( 'post-thumbnails' );
 //Theme Support WooCommerce
 add_theme_support( 'woocommerce' );
 
+//Theme support custom search form
+add_theme_support( 'html5', array( 'search-form' ) );
+
 //WooCommerce start
 //Customize WooCommerce wrappers
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
