@@ -39,6 +39,12 @@ a:hover{
     color: #DB5F4C !important;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active{
+    outline: none !important;
+    box-shadow: none;
+}
+
 .shoppingcarticon{
     font-size: 1.5em;
     padding: auto 0;
