@@ -36,7 +36,7 @@ defined( 'ABSPATH' ) || exit;
 <div class="container containerpadding">
 	<div class="row d-flex">
 		<div class="col-12 col-lg-3 p-0">
-			<h1 class="col-12 p-0 p-lg-0 px-md-3 my-3">Shop</h1>
+			<h1 class="d-none d-lg-block col-12 p-0 p-lg-0 px-md-3 my-3">Shop</h1>
 			<?php
 				//parent category inputs
 				$prodcat_featured = get_term_by('name', 'featured', 'product_cat');
@@ -99,7 +99,7 @@ defined( 'ABSPATH' ) || exit;
 					 * @hooked woocommerce_catalog_ordering - 30
 					 */
 					?>
-					<div class="text-center text-lg-left mb-4 mb-lg-0"> 
+					<div class="text-left pl-3 pl-lg-0 mb-4 mb-lg-0"> 
 						<?php do_action( 'woocommerce_before_shop_loop' ); ?>
 					</div>
 					<?php
