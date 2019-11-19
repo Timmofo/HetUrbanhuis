@@ -84,7 +84,7 @@
                     $price = get_post_meta( $product->get_ID() , '_regular_price', true);
                     ?>
 
-                    <div class="shopcontent__container col-6 col-lg-4 pl-2 pl-lg-4 pr-md-3 pr-lg-0">                   
+                    <div class="shopcontent__container col-6 col-lg-4 pr-1 pr-md-3 pr-lg-0 pl-1 pl-md-3">                   
                         <a href="<?php echo $currentproduct->get_permalink(); ?>">
                             <img class="shopcontent__image" src="<?php echo $image[0] ?>">
                             <div class="shopcontent__information shopcontent__information<?php echo $count ?>">
