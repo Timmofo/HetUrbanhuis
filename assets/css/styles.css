@@ -154,11 +154,11 @@ a:hover{
 }
 
 #navbarmain .container{
-    padding: 2% 0;
+    padding: 1% 0;
 }
 
 #navbarmain li a{
-    color: black;
+    color: #000;
 }
 
 #navbarmain li a:hover{
@@ -167,7 +167,8 @@ a:hover{
 
 .navbarmain__icon{
     padding-top: 3px;
-    color: black;
+    font-size: 1.5rem;
+    color: #000;
 }
 
 .navbarmain__icon:hover{
