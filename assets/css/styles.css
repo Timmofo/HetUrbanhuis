@@ -30,6 +30,7 @@ a{
     color: black;
 }
 
+
 a:hover{
     text-decoration: none;
 }
@@ -693,7 +694,7 @@ a:hover{
 .wpcf7-submit, .wpcf7-submit:visited {
     color: #486c3c;
     background-color: transparent;
-    border: 1.7px solid #7faf70;
+    border: 1.7px solid #486c3c;
     border-radius: 4px;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -718,7 +719,7 @@ a:hover{
 .footer__top__navheader, .footer__top__navlink, .footer__top__navtext, .footer__bottom__link, .footer__bottom__navheader, .footer__bottom__separator{
     color: white;
     text-decoration: none;
-    margin: 0;
+    margin: 0 0 .5rem 0;
 }
 
 .footer__list{
@@ -781,13 +782,17 @@ a:hover{
     font-size: 18px;
 }
 
-.activefooter, .collapsiblefooter:hover {
+.activefooter,
+.collapsiblefooter:hover,
+.collapsiblefooter:active{
     background-color: #75877D;
+    outline: none !important;
+    box-shadow: none;
 }
 
 .collapsiblefooter:after {
     content: '\002B'; /* character for "plus" sign (+) */
-    font-size: 20px;
+    font-size: 18px;
     float: right;
     margin-left: 5px;
     font-weight: 400; 
@@ -795,7 +800,7 @@ a:hover{
   
 .activefooter:after {
     content: "\002D"; /* character for "minus" sign (-) */
-    font-size: 20px;
+    font-size: 18px;
     float: right;
     margin-left: 5px;
     font-weight: 400; 
@@ -804,8 +809,6 @@ a:hover{
 .footer__content{
     display: none;
 }
-
-
 
 /* Checkout Page*/
 .shopcontent__name:hover{
