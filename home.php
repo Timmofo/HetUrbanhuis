@@ -40,7 +40,7 @@
                         $query->the_post();
 
                         ?>
-                            <div class="col-12 col-md-6 col-lg-4 d-flex py-3 pl-3 pl-lg-0">
+                            <div class="col-12 col-md-6 col-lg-4 d-flex py-3 pl-lg-0">
                                 <div class="card featured__card<?php echo $count;?>">
 
                                     <img src="<?php the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">
@@ -75,7 +75,7 @@
 <div class="blog__content container containerpadding">
     <div>
         <ul class="blog__categories text-center">
-            <li class="blog__categoryitem"><a class="activenav" href="http://testomgeving.heturbanhuis.nl/blog">Alle Onderwerpen</a></li>
+            <li class="blog__categoryitem my-2 p-0 pr-sm-5"><a class="activenav" href="http://testomgeving.heturbanhuis.nl/blog">Alle Onderwerpen</a></li>
             <?php
             //filter homepage & featured category
             $featured_id = get_cat_ID('featured');
@@ -90,11 +90,11 @@
                 $cat_id = $category->term_id;
                 $category_name = $category->name;
                 ?>
-                <li class="blog__categoryitem"><a href=<?php echo get_category_link($cat_id); ?>><?php echo $category_name; ?></a></li>
+                <li class="blog__categoryitem mb-2 p-0 pr-sm-5"><a href=<?php echo get_category_link($cat_id); ?>><?php echo $category_name; ?></a></li>
                 <?php
             }
             ?>
-            <li class="blog__categorysearch p-0">               
+            <li class="blog__categorysearch p-0 mb-3">               
                 <?php get_search_form(); ?>
             </li>
         </ul>
@@ -119,8 +119,8 @@ if($query->have_posts()) {
 
         ?>
             <div class="row blog__post">
-                <div class="blog__contentcontainer col-12 col-md-6 py-3 order-2 order-md-1">
-                    <h3 class="blog__title"><?php the_title_attribute();?></h1>
+                <div class="blog__contentcontainer col-12 col-md-6 py-3 pl-md-0 order-2 order-md-1">
+                    <a href="<?php the_permalink();?>"><h3 class="blog__title"><?php the_title_attribute();?></h3></a>
                     <p>
                     <?php echo strip_tags(get_the_excerpt()); ?>
                     </p>
@@ -128,7 +128,7 @@ if($query->have_posts()) {
                     <p class="blog__publication d-inline text-left"><span><?php echo get_the_date(); ?></span></p>                    
                     <p class="blogpost__category col-12 col-sm-6 text-right pl-1 pl-sm-3">Categorie: </p> <?php add_filter('the_category','the_category_filter',$featured_id,$homepage_id); ?>
                 </div>
-                <div class="blog__picturecontainer col-12 col-md-6 mt-3 order-1 order-md-2">
+                <div class="blog__picturecontainer col-12 col-md-6 p-2 p-md-0 pr-lg-3 mt-3 order-1 order-md-2">
                     <img class="blog__picture" src="<?php the_post_thumbnail_url(); ?>">        
                 </div>
             </div>
