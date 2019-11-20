@@ -19,7 +19,7 @@
 </div>
 
 <div class="container containerpadding row px-3 px-md-0 my-3">
-    <div class="col-12 col-lg-3 p-0">
+    <div class="col-12 col-lg-3 p-0 pr-3">
         <h1 class="col-12 p-0 p-lg-0 px-md-3 mb-3">Shop</h1>
         <?php
             //parent category inputs
@@ -84,7 +84,7 @@
                     $price = get_post_meta( $product->get_ID() , '_regular_price', true);
                     ?>
 
-                    <div class="shopcontent__container col-6 col-lg-4 pr-1 pr-md-3 pr-lg-0 pl-1 pl-md-3">                   
+                    <div class="shopcontent__container col-6 col-lg-4 pl-1 pl-md-3 pl-lg-0 pr-1 pr-md-3">                   
                         <a href="<?php echo $currentproduct->get_permalink(); ?>">
                             <img class="shopcontent__image" src="<?php echo $image[0] ?>">
                             <div class="shopcontent__information shopcontent__information<?php echo $count ?>">
