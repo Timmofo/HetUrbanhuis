@@ -682,7 +682,7 @@ a:hover{
 .footer__top__navheader, .footer__top__navlink, .footer__top__navtext, .footer__bottom__link, .footer__bottom__navheader, .footer__bottom__separator{
     color: white;
     text-decoration: none;
-    margin: 0;
+    margin: 0 0 .5rem 0;
 }
 
 .footer__list{
