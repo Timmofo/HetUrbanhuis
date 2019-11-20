@@ -76,7 +76,7 @@
                     ?>
             </div>
         </div>
-        <div class="col-12 col-md-4 my-3 my-md-0 pl-4 pl-lg-0 order-1 order-md-2">
+        <div class="col-12 col-md-4 my-3 my-md-0 pl-4 pl-lg-3 order-1 order-md-2">
             <div class="frontpagefeatured__description position-relative text-center text-md-left">
                 <h2>Onze Bestsellers</h2>
                 <p>
