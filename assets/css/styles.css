@@ -583,6 +583,22 @@ a:hover{
     font-size: 1.0em;
 }
 
+.postpadding {
+    padding: 3% 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .postpadding {
+        padding: 3% 6rem;
+    }
+}
+
+@media (min-width: 992px){
+    .postpadding {
+        padding: 3% 12rem;
+    }
+}
+
 .post-categories li a{
     color: #DB5F4C;
 }    

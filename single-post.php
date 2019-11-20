@@ -16,11 +16,11 @@
     </div>
 </div>
 
-<div class="container containerpadding px-3 px-lg-0">
+<div class="container containerpadding postpadding">
     <?php
         if (have_posts()):
             while (have_posts()) : the_post();
-                ?><h1><?php the_title(); ?></h1><?php
+                ?><h1 class="mb-3"><?php the_title(); ?></h1><?php
                 the_content();
             endwhile;
         else:
