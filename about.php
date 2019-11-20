@@ -20,7 +20,7 @@
 <div class="container containerpadding">
     <div class="row">
         
-        <div class="col-lg-6 col-sm-12 mb-3 order-2 order-lg-1 px-3 px-lg-0">
+        <div class="col-lg-6 col-sm-12 px-3 px-lg-0 pr-lg-3 my-3 my-lg-0 order-2 order-lg-1">
             <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/images/about_davide.jpg" alt="Davide Brouwer met een plant" height="auto" width="100%">
         </div>
 
