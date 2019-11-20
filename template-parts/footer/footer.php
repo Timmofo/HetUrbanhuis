@@ -37,6 +37,7 @@
                                 <li class="footer__top__navtext">iDEAL</li>
                                 <li class="footer__top__navtext">PayPal</li>
                                 <li class="footer__top__navtext">Belfius Direct Net</li>
+                                <li class="footer__top__navtext">Bancontact</li>
                                 <li class="footer__top__navtext">Mastercard</li>
                                 <li class="footer__top__navtext">VISA</li>
                             </ul>
