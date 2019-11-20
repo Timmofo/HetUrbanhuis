@@ -34,7 +34,7 @@
                     <li class="nav-item text-center">
                         <a id="navmain__contactlink" class="nav-link navbarmain__link" href="http://testomgeving.heturbanhuis.nl/contact">Contact</a>
                     </li>       
-                    <li class="nav-item text-center"> 
+                    <li class="nav-item text-center pr-3"> 
                         <a class="navbarmain__shoppingcart2 navbarmain__link" href="http://testomgeving.heturbanhuis.nl/cart"> 
                             <i class="fas fa-shopping-cart" id="shoppingcarticon2"></i>
                         </a>
