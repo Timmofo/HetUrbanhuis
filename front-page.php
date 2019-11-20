@@ -8,7 +8,7 @@
 
 <header id="frontpage__header">
     <div id="frontpage__container" class="container containerpadding">
-        <div id="frontpage__brandplate" class="text-center text-md-left">
+        <div id="frontpage__brandplate" class="text-center text-md-left pl-md-3 pl-lg-0">
             <h1 id="frontpage__brandname">Het Urbanhuis</h1>
             <h2 id="frontpage__tagline">Creëer je eigen Urban Jungle</h2>
             <a href="http://testomgeving.heturbanhuis.nl/winkel" class="CTA_button btn-full mt-4 mt-md-0">Ga naar de Shop</a>
@@ -18,7 +18,7 @@
 
 <div id="frontpage_about">
     <div class="container containerpadding row">
-        <div id="frontpage__aboutleft" class="col-12 col-md-6 p-4 pl-md-0 mx-auto text-center text-md-left">
+        <div id="frontpage__aboutleft" class="col-12 col-md-6 p-4 pl-md-3 pl-lg-0 text-center text-md-left">
             <h2>Wat we doen</h2>
             <p>
                 Hi, welkom bij het Urbanhuis!<br><br>
@@ -34,14 +34,14 @@
                 Kijk eens rond!
             </p> 
         </div>
-        <div id="frontpage__aboutright" class="col-12 col-md-6 d-none d-md-inline-block px-3">
+        <div id="frontpage__aboutright" class="col-12 col-md-6 d-none d-md-inline-block pl-0">
             <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/images/frontpageabout.jpg" alt="Drie verschillende soorten opgroeiende kamerplanten">
         </div>
     </div>
 </div>
 
 <div id="frontpage_featured_products" class="frontpage-background">
-    <div class="container containerpadding row">
+    <div class="container containerpadding row px-0 px-md-3 px-lg-0">
         <div class="col-12 col-md-8 p-0 order-2">
             <div class="row d-flex">
                 <?php
@@ -76,7 +76,7 @@
                     ?>
             </div>
         </div>
-        <div class="col-12 col-md-4 my-3 my-md-0 pl-4 pl-lg-3 order-1 order-md-2">
+        <div class="col-12 col-md-4 my-3 my-md-0 pl-3 pr-md-0 order-1 order-md-2">
             <div class="frontpagefeatured__description position-relative text-center text-md-left">
                 <h2>Onze Bestsellers</h2>
                 <p>
@@ -95,8 +95,8 @@
 </div>
 
 <div id="frontpage_recommendations">
-    <div class="container containerpadding row">
-        <div class="col m-4">
+    <div class="container containerpadding row px-0 px-md-3 px-lg-0">
+        <div class="col m-4 m-md-0">
             <i class="fas fa-quote-left fa-5x frontpage__reviewquote"></i>
             <h2 class="text-center my-3">Zij gingen je voor!</h2>
 
@@ -194,7 +194,7 @@
                                     <img src="<?php the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">
 
                                     <div class="card-body">
-                                        <h3><?php the_title_attribute();?></h3>
+                                        <a href="<?php the_permalink(); ?>"><h3><?php the_title_attribute();?></h3></a>
                                         <p class="card-text flex-fill"><?php echo strip_tags(get_the_excerpt()); ?></p>
                                         <a href="<?php the_permalink(); ?>" class="CTA_button btn-text">Lees meer</a>
                                     </div>
