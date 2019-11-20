@@ -37,7 +37,7 @@
         
         </div>
 
-        <div class="col-12 col-lg-6 pr-lg-0 my-3 order-1 order-lg-2">
+        <div class="col-12 col-lg-6 my-3 order-1 order-lg-2">
             <div class="contact__contactform">
                 <h2>Stel hier je vraag!</h2>
                 <p>
