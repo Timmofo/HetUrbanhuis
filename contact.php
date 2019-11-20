@@ -33,7 +33,7 @@
                 BTW nummer:  NL210575050B01
             </p>
             
-            <img class="contact__foto px-0" src="<?php echo get_bloginfo( 'template_directory' );?>/assets/images/contact_davide.jpg" alt="Contact">
+            <img class="contact__foto px-0" src="<?php echo get_bloginfo( 'template_directory' );?>/assets/images/contact_davide.jpg" alt="Davide verzorgt een zelf gezaaide kamerplant">
         
         </div>
 

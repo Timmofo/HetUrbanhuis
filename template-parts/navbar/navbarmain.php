@@ -2,7 +2,7 @@
 
     <!-- Keep this part in to create dynamic space for the navbar -->
     <nav id="navbarmain">
-        <div class="container">
+        <div class="container mb-3 mb-lg-0">
             <br>
         </div>
     </nav>

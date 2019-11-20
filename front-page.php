@@ -35,7 +35,7 @@
             </p> 
         </div>
         <div id="frontpage__aboutright" class="col-12 col-md-6 d-none d-md-inline-block px-3">
-            <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/images/frontpageabout.jpg" alt="plant image">
+            <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/images/frontpageabout.jpg" alt="Drie verschillende soorten opgroeiende kamerplanten">
         </div>
     </div>
 </div>

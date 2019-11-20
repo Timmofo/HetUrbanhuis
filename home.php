@@ -40,7 +40,7 @@
                         $query->the_post();
 
                         ?>
-                            <div class="col-12 col-md-6 col-lg-4 d-flex py-3 pl-0">
+                            <div class="col-12 col-md-6 col-lg-4 d-flex py-3 pl-3 pl-lg-0">
                                 <div class="card featured__card<?php echo $count;?>">
 
                                     <img src="<?php the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">

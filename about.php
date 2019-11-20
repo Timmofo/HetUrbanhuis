@@ -21,7 +21,7 @@
     <div class="row">
         
         <div class="col-lg-6 col-sm-12 mb-3 order-2 order-lg-1 px-3 px-lg-0">
-            <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/images/about_davide.jpg" alt="Davide Brouwer" height="auto" width="100%">
+            <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/images/about_davide.jpg" alt="Davide Brouwer met een plant" height="auto" width="100%">
         </div>
 
         <div class="col-lg-6 col-sm-12 mt-3 mt-md-0 px-3 order-1 order-lg-2">
