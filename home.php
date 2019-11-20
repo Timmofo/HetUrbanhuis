@@ -46,7 +46,7 @@
                                     <img src="<?php the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">
 
                                     <div class="card-body">
-                                        <h2><?php the_title_attribute();?></h2>
+                                        <a href="<?php the_permalink();?>"><h2><?php the_title_attribute();?></h2></a>
                                         <p class="card-text flex-fill"><?php echo strip_tags(get_the_excerpt()); ?></p>
                                         <a href="<?php the_permalink(); ?>" class="CTA_button btn-text">Lees meer</a>
                                     </div>
