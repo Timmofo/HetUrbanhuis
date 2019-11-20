@@ -4,8 +4,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-2 d-lg-block p-0">
-                        
-                        <H4 class="d-none d-lg-block footer__top__navheader">Navigatie</H4>    
+
+                        <h4 class="d-none d-lg-block footer__top__navheader">Navigatie</h4>    
                         <button type="button" class="d-lg-none collapsiblefooter footer__top__navheader">Navigatie</button>
                         <ul class="footer__list d-lg-block pl-3 pl-lg-0">
                             <li><a class="footer__top__navlink" href="http://testomgeving.heturbanhuis.nl/">Home</a></li>
@@ -19,7 +19,7 @@
 
                     <div class="col-12 col-lg-2 d-lg-block p-0">
                         
-                        <H4 class="d-none d-lg-block footer__top__navheader">Informatie</H4>
+                        <h4 class="d-none d-lg-block footer__top__navheader">Informatie</h4>
                         <button type="button" class="d-lg-none collapsiblefooter footer__top__navheader">Informatie</button>
                             <ul class="footer__list d-lg-block pl-3 pl-lg-0">
                                 <li><a class="footer__top__navlink" href="http://testomgeving.heturbanhuis.nl/levering/">Levering</a></li>
@@ -31,7 +31,7 @@
 
                     <div class="col-12 col-lg-2 d-lg-block p-0">
                     
-                        <H4 class="d-none d-lg-block footer__top__navheader">Betaalmogelijkheden</H4>
+                        <h4 class="d-none d-lg-block footer__top__navheader">Betaalmogelijkheden</h4>
                         <button type="button" class="d-lg-none collapsiblefooter footer__top__navheader">Betaalmogelijkheden</button>
                             <ul class="footer__list d-lg-block pl-3 pl-lg-0 pt-1">
                                 <li class="footer__top__navtext">iDEAL</li>
