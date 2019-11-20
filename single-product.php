@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-1 order-lg-2">
-                        <h1><?php echo $current_product->get_title(); ?></h1>
+                        <h1 class="mt-3 mt-lg-0"><?php echo $current_product->get_title(); ?></h1>
                         <p class="singleproduct__price">€<?php echo $current_product->get_price(); ?></p>
 
                         <?php 
@@ -127,7 +127,7 @@
                         $price = get_post_meta($currentrelatedproduct->get_ID(), '_regular_price', true);
                         ?>
 
-                        <div class="col-4 shopcontent__container col-12 col-md-4 px-lg-0 px-3 mb-0">                   
+                        <div class="shopcontent__container col-12 col-md-4 px-3 pl-lg-0 mb-0">                   
                             <a href="<?php echo $currentrelatedproduct->get_permalink(); ?>">
                                 <img class="shopcontent__image" src="<?php echo $image_related[0] ?>">
                                 <div class="shopcontent__information">
