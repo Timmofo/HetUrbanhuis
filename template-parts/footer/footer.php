@@ -51,7 +51,7 @@
                             <h3 class="footer__top__navheader">Volg ons en laat je inspireren!</h3>
                             <p>
                                 <a href="https://www.instagram.com/heturbanhuis/"> <i class="fab fa-instagram instagram"></i></a>
-                                <a href="https://www.facebook.com/heturbanhuis/"><i class="fab fa-facebook-square facebook"></i></a>
+                                <a href="https://www.facebook.com/Het-Urbanhuis-2238612916193320/"><i class="fab fa-facebook-square facebook"></i></a>
                             </p>
                         </div>
                     </div>  
