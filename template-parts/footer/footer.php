@@ -8,11 +8,11 @@
                         <h4 class="d-none d-lg-block footer__top__navheader">Navigatie</h4>    
                         <button type="button" class="d-lg-none collapsiblefooter footer__top__navheader">Navigatie</button>
                         <ul class="footer__list d-lg-block pl-3 pl-lg-0">
-                            <li><a class="footer__top__navlink" href="http://testomgeving.heturbanhuis.nl/">Home</a></li>
-                            <li><a class="footer__top__navlink" href="http://testomgeving.heturbanhuis.nl/winkel">Shop</a></li>
-                            <li><a class="footer__top__navlink" href="http://testomgeving.heturbanhuis.nl/blog">Blog</a></li>
-                            <li><a class="footer__top__navlink" href="http://testomgeving.heturbanhuis.nl/about/">About</a></li>
-                            <li><a class="footer__top__navlink" href="http://testomgeving.heturbanhuis.nl/contact/">Contact</a></li>
+                            <li><a class="footer__top__navlink" href="https://www.heturbanhuis.nl/">Home</a></li>
+                            <li><a class="footer__top__navlink" href="https://www.heturbanhuis.nl/winkel">Shop</a></li>
+                            <li><a class="footer__top__navlink" href="https://www.heturbanhuis.nl/blog">Blog</a></li>
+                            <li><a class="footer__top__navlink" href="https://www.heturbanhuis.nl/about/">About</a></li>
+                            <li><a class="footer__top__navlink" href="https://www.heturbanhuis.nl/contact/">Contact</a></li>
                         </ul>
 
                     </div>
@@ -22,9 +22,9 @@
                         <h4 class="d-none d-lg-block footer__top__navheader">Informatie</h4>
                         <button type="button" class="d-lg-none collapsiblefooter footer__top__navheader">Informatie</button>
                             <ul class="footer__list d-lg-block pl-3 pl-lg-0">
-                                <li><a class="footer__top__navlink" href="http://testomgeving.heturbanhuis.nl/levering/">Levering</a></li>
-                                <li><a class="footer__top__navlink" href="http://testomgeving.heturbanhuis.nl/retour/">Retour</a></li>
-                                <li><a class="footer__top__navlink" href="http://testomgeving.heturbanhuis.nl/faq/">FAQ</a></li>
+                                <li><a class="footer__top__navlink" href="https://www.heturbanhuis.nl/levering/">Levering</a></li>
+                                <li><a class="footer__top__navlink" href="https://www.heturbanhuis.nl/retour/">Retour</a></li>
+                                <li><a class="footer__top__navlink" href="https://www.heturbanhuis.nl/faq/">FAQ</a></li>
                             </ul>
 
                     </div>
@@ -63,9 +63,9 @@
             <div class="container  footer__bottom">
                 <span class="footer__bottom__navheader"> <i id="footerbottom_copyrighticon" class="far fa-copyright"> </i> Het Urbanhuis </span>   
                 <div> 
-                    <a class="footer__bottom__link" href="http://testomgeving.heturbanhuis.nl/algemene-voorwaarden/">Algemene Voorwaarden</a>
+                    <a class="footer__bottom__link" href="https://www.heturbanhuis.nl/algemene-voorwaarden/">Algemene Voorwaarden</a>
                         <span class="footer__bottom__separator"> |</span>
-                    <a class="footer__bottom__link" href="http://testomgeving.heturbanhuis.nl/privacy-policy/">Privacy Policy</a>
+                    <a class="footer__bottom__link" href="https://www.heturbanhuis.nl/privacy-policy/">Privacy Policy</a>
                 </div>       
             </div>
         </div>

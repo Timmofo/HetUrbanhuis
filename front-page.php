@@ -11,7 +11,7 @@
         <div id="frontpage__brandplate" class="text-center text-md-left pl-md-3 pl-lg-0">
             <h1 id="frontpage__brandname">Het Urbanhuis</h1>
             <h2 id="frontpage__tagline">Creëer je eigen Urban Jungle</h2>
-            <a href="http://testomgeving.heturbanhuis.nl/winkel" class="CTA_button btn-full mt-4 mt-md-0">Ga naar de Shop</a>
+            <a href="https://www.heturbanhuis.nl/winkel" class="CTA_button btn-full mt-4 mt-md-0">Ga naar de Shop</a>
         </div>
     </div>
 </header>
@@ -83,12 +83,12 @@
                     Wij stellen je graag voor aan de populairste 
                     planten van dit seizoen!
                 </p>
-                <a href="http://testomgeving.heturbanhuis.nl/winkel" class="CTA_button btn-outline d-none d-md-inline-block">Bekijk Meer</a>
+                <a href="https://www.heturbanhuis.nl/winkel" class="CTA_button btn-outline d-none d-md-inline-block">Bekijk Meer</a>
             </div>
         </div>
         <div class="col-12 col-md-4 order-3">
             <div class="frontpagefeatured__button position-relative text-center text-md-left d-md-none mb-3">
-                <a href="http://testomgeving.heturbanhuis.nl/winkel" class="CTA_button btn-outline">Bekijk Meer</a>
+                <a href="https://www.heturbanhuis.nl/winkel" class="CTA_button btn-outline">Bekijk Meer</a>
             </div>
         </div>
     </div>

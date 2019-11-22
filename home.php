@@ -75,7 +75,7 @@
 <div class="blog__content container containerpadding">
     <div>
         <ul class="blog__categories text-center">
-            <li class="blog__categoryitem my-2 p-0 pr-sm-5"><a class="activenav" href="http://testomgeving.heturbanhuis.nl/blog">Alle Onderwerpen</a></li>
+            <li class="blog__categoryitem my-2 p-0 pr-sm-5"><a class="activenav" href="https://www.heturbanhuis.nl/blog">Alle Onderwerpen</a></li>
             <?php
             //filter homepage & featured category
             $featured_id = get_cat_ID('featured');

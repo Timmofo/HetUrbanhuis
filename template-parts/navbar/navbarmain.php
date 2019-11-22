@@ -14,28 +14,28 @@
                     <i class="fas fa-bars navbarmain__icon"></i>
                 </span>
             </button>
-            <a class="navbar-brand pb-3 pb-lg-0 m-0" id="navbarmain__brand" href="http://testomgeving.heturbanhuis.nl">
+            <a class="navbar-brand pb-3 pb-lg-0 m-0" id="navbarmain__brand" href="https://www.heturbanhuis.nl">
                 <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/images/logo_heturbanhuis.png" width="auto" height="30rem" alt="logo het urbanhuis">
             </a>
-            <a class="navbarmain__shoppingcart1 px-3" href="http://testomgeving.heturbanhuis.nl/cart"> 
+            <a class="navbarmain__shoppingcart1 px-3" href="https://www.heturbanhuis.nl/cart"> 
                 <i class="fas fa-shopping-cart" id="shoppingcarticon1"></i>
             </a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item text-center">
-                        <a id="navmain__shoplink" class="nav-link navbarmain__link" href="http://testomgeving.heturbanhuis.nl/winkel">Shop<span class="sr-only">(current)</span></a>
+                        <a id="navmain__shoplink" class="nav-link navbarmain__link" href="https://www.heturbanhuis.nl/winkel">Shop<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item text-center">
-                        <a id="navmain__bloglink" class="nav-link navbarmain__link" href="http://testomgeving.heturbanhuis.nl/blog">Blog</a>
+                        <a id="navmain__bloglink" class="nav-link navbarmain__link" href="https://www.heturbanhuis.nl/blog">Blog</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a id="navmain__aboutlink" class="nav-link navbarmain__link" href="http://testomgeving.heturbanhuis.nl/about">About</a>
+                        <a id="navmain__aboutlink" class="nav-link navbarmain__link" href="https://www.heturbanhuis.nl/about">About</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a id="navmain__contactlink" class="nav-link navbarmain__link" href="http://testomgeving.heturbanhuis.nl/contact">Contact</a>
+                        <a id="navmain__contactlink" class="nav-link navbarmain__link" href="https://www.heturbanhuis.nl/contact">Contact</a>
                     </li>       
                     <li class="nav-item text-center pr-3"> 
-                        <a class="navbarmain__shoppingcart2 navbarmain__link" href="http://testomgeving.heturbanhuis.nl/cart"> 
+                        <a class="navbarmain__shoppingcart2 navbarmain__link" href="https://www.heturbanhuis.nl/cart"> 
                             <i class="fas fa-shopping-cart" id="shoppingcarticon2"></i>
                         </a>
                     </li>         
