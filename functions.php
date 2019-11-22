@@ -51,7 +51,7 @@ function the_category_filter($thelist,$separator=' ') {
 add_filter( 'woocommerce_continue_shopping_redirect', 'bbloomer_change_continue_shopping' );
  
 function bbloomer_change_continue_shopping() {
-   return 'https://testomgeving.heturbanhuis.nl/winkel';
+   return 'https://www.heturbanhuis.nl/winkel';
 }
 
 ?>
