@@ -48,7 +48,9 @@
                     //input arguments
                     $args = array(
                         'limit' => 3,
-                        'category' => 'homepage'
+                        'category' => 'homepage',
+                        'post_status'=> array('publish'),
+                        'stock_status' => 'instock'
                     );
                     $products = wc_get_products( $args );
                     $count = 1;
@@ -156,6 +158,40 @@
                             </p>
 
                         </p>
+                </div>
+                <div class="carousel-item">
+                    <p class="text-center">
+                        
+                        Mooie zaden, fijne communicatie, vriendelijk.<br>
+                        Mijn pakketje was kwijtgeraakt in de post. De communicatie hier over was zeer fijn en mij is kosteloos een nieuw pakketje opgestuurd, incl een kleine verrassing! Super! 
+                            
+                            <p class="text-center">
+                                <i class="fas fa-star frontpage__reviewstar"></i>
+                                <i class="fas fa-star frontpage__reviewstar"></i>
+                                <i class="fas fa-star frontpage__reviewstar"></i>
+                                <i class="fas fa-star frontpage__reviewstar"></i>
+                                <i class="fas fa-star frontpage__reviewstar"></i>               
+                                - Janneke
+                            </p>
+
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <p class="text-center">
+                        
+                        Super leuk om de kamerplanten vanuit de zaadjes te laten groeien!<br>
+                        De levering verliep netjes en goed en er zat een leuk hand geschreven kaartje bij.   
+                            
+                            <p class="text-center">
+                                <i class="fas fa-star frontpage__reviewstar"></i>
+                                <i class="fas fa-star frontpage__reviewstar"></i>
+                                <i class="fas fa-star frontpage__reviewstar"></i>
+                                <i class="fas fa-star frontpage__reviewstar"></i>
+                                <i class="fas fa-star frontpage__reviewstar"></i>               
+                                - Mariska
+                            </p>
+
+                    </p>
                 </div>
             </div>
             </div>

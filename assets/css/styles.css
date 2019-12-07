@@ -671,6 +671,12 @@ a:hover{
     margin: 0;
 }
 
+.shopcontent__soldout{
+    color: #DB5F4C;
+    text-align: center;
+    margin: 0;
+}
+
 /*Contact Page Styling*/
 .contact__foto{
     width: 100%;

@@ -88,6 +88,11 @@
                         echo $short_description; 
                         ?>
 
+                        <?php
+                            if ( !$current_product->is_in_stock() ) {
+                                echo("<p class=\"shopcontent__soldout\">Product is uitverkocht en heeft een langere levertijd.</p>");
+                            }
+                        ?>
                         <div class="text-center justify-content-center d-block d-sm-flex">
                             <div class="product__quantity d-block">
                                 <form id="product__quantity" method="get">

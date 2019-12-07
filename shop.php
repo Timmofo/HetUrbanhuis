@@ -73,7 +73,8 @@
             <?php
                 //input arguments
                 $args = array(
-                    'limit' => 30
+                    'limit' => 30,
+                    'post_status'=> array('publish')
                 );
                 $products = wc_get_products( $args );
                 $count = 1;
@@ -88,6 +89,11 @@
                         <a href="<?php echo $currentproduct->get_permalink(); ?>">
                             <img class="shopcontent__image" src="<?php echo $image[0] ?>">
                             <div class="shopcontent__information shopcontent__information<?php echo $count ?>">
+                                <?php
+                                if ( !$currentproduct->is_in_stock() ) {
+                                    echo("<p class=\"shopcontent__soldout\">Back Soon!</p>");
+                                }
+                                ?>
                                 <p class="shopcontent__name"><?php echo $currentproduct->get_name(); ?></p>
                                 <p class="shopcontent__tag">Zaden</p>
                                 <p class="shopcontent__price"><?php echo wc_price($price); ?></p>
