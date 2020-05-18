@@ -130,6 +130,7 @@
                         $currentrelatedproduct = wc_get_product($related_product);
                         $image_related = wp_get_attachment_image_src( get_post_thumbnail_id($currentrelatedproduct->get_id()), 'single-post-thumbnail' );
                         $price = get_post_meta($currentrelatedproduct->get_ID(), '_regular_price', true);
+                        $saleprice = get_post_meta($currentrelatedproduct->get_ID(), '_sale_price', true);
                         ?>
 
                         <div class="shopcontent__container col-12 col-md-4 px-3 pl-lg-0 mb-0">                   
@@ -138,7 +139,20 @@
                                 <div class="shopcontent__information">
                                     <p class="shopcontent__name"><?php echo $currentrelatedproduct->get_name(); ?></p>
                                     <p class="shopcontent__tag">Zaden</p>
-                                    <p class="shopcontent__price"><?php echo wc_price($price); ?></p>
+                                    <?php 
+									if ($saleprice == 0){
+									?>
+										<p class="shopcontent__price"><?php echo wc_price($price); ?></p>
+									<?php
+									} else {
+									?>        
+										<p class="shopcontent__price">
+											<span class="price__oldprice"><?php echo wc_price($price); ?></span>
+											<span class="price__sale"><?php echo wc_price($saleprice); ?></span>
+										</p>                      
+									<?php
+									}
+									?>
                                 </div>
                             </a>
                         </div>       

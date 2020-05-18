@@ -115,6 +115,8 @@ defined( 'ABSPATH' ) || exit;
 							do_action( 'woocommerce_shop_loop' );
 							
 							$price = get_post_meta( get_the_ID(), '_price', true );
+							$price = get_post_meta( get_the_ID() , '_regular_price', true);
+							$saleprice = get_post_meta( get_the_ID() , '_sale_price', true);
 
 							?>
 								<div class="shopcontent__container col-12 col-md-6 col-lg-4 pl-lg-0 px-3 pt-lg-5">                   
@@ -123,7 +125,20 @@ defined( 'ABSPATH' ) || exit;
 										<div class="shopcontent__information shopcontent__information<?php echo $count ?>">
 											<p class="shopcontent__name"><?php the_title_attribute();?></p>
 											<p class="shopcontent__tag">Zaden</p>
-											<p class="shopcontent__price"><?php echo wc_price($price); ?></p>
+											<?php 
+												if ($saleprice == 0){
+											?>
+													<p class="shopcontent__price"><?php echo wc_price($price); ?></p>
+											<?php
+												} else {
+											?>        
+													<p class="shopcontent__price">
+														<span class="price__oldprice"><?php echo wc_price($price); ?></span>
+														<span class="price__sale"><?php echo wc_price($saleprice); ?></span>
+													</p>                      
+											<?php
+												}
+											?>
 										</div>
 									</a>
 								</div> 

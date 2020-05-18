@@ -83,6 +83,7 @@
                     $currentproduct = wc_get_product($product->get_ID());
                     $image = wp_get_attachment_image_src( get_post_thumbnail_id($currentproduct->get_id()), 'single-post-thumbnail' );
                     $price = get_post_meta( $product->get_ID() , '_regular_price', true);
+                    $saleprice = get_post_meta( $product->get_ID() , '_sale_price', true);
                     ?>
 
                     <div class="shopcontent__container col-6 col-lg-4 pl-1 pl-md-3 pl-lg-0 pr-1 pr-md-3">                   
@@ -96,7 +97,20 @@
                                 ?>
                                 <p class="shopcontent__name"><?php echo $currentproduct->get_name(); ?></p>
                                 <p class="shopcontent__tag">Zaden</p>
-                                <p class="shopcontent__price"><?php echo wc_price($price); ?></p>
+                                <?php 
+                                    if ($saleprice == 0){
+                                ?>
+                                        <p class="shopcontent__price"><?php echo wc_price($price); ?></p>
+                                <?php
+                                    } else {
+                                ?>        
+                                        <p class="shopcontent__price">
+                                            <span class="price__oldprice"><?php echo wc_price($price); ?></span>
+                                            <span class="price__sale"><?php echo wc_price($saleprice); ?></span>
+                                        </p>                      
+                                <?php
+                                    }
+                                ?>
                             </div>
                         </a>
                     </div>

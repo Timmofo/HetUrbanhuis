@@ -671,6 +671,14 @@ a:hover{
     margin: 0;
 }
 
+.shopcontent__price .price__oldprice .amount{
+    text-decoration: line-through;   
+}
+
+.shopcontent__price .price__sale .amount{
+    color: #DB5F4C;
+}
+
 .shopcontent__soldout{
     color: #DB5F4C;
     text-align: center;
