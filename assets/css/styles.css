@@ -671,11 +671,11 @@ a:hover{
     margin: 0;
 }
 
-.shopcontent__price .price__oldprice .amount{
+.shopcontent__price .price__oldprice .amount, .singleproduct__price .price__oldprice .amount{
     text-decoration: line-through;   
 }
 
-.shopcontent__price .price__sale .amount{
+.shopcontent__price .price__sale .amount, .singleproduct__price .price__sale .amount{
     color: #DB5F4C;
 }
 

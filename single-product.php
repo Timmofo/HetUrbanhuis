@@ -39,6 +39,9 @@
             $attachment_ids = $current_product->get_gallery_attachment_ids();
             $img_urls = array();
 
+            $price = get_post_meta($current_product->get_ID(), '_regular_price', true);
+            $saleprice = get_post_meta($current_product->get_ID(), '_sale_price', true);
+
             foreach($attachment_ids as $attachment_id){
                 $img_urls[] = wp_get_attachment_url( $attachment_id);
             }
@@ -81,7 +84,20 @@
                     </div>
                     <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-1 order-lg-2">
                         <h1 class="mt-3 mt-lg-0"><?php echo $current_product->get_title(); ?></h1>
-                        <p class="singleproduct__price">€<?php echo $current_product->get_price(); ?></p>
+                        <?php 
+                                    if ($saleprice == 0){
+                                ?>
+                                        <p class="singleproduct__price"><?php echo wc_price($price); ?></p>
+                                <?php
+                                    } else {
+                                ?>        
+                                        <p class="singleproduct__price">
+                                            <span class="price__oldprice"><?php echo wc_price($price); ?></span>
+                                            <span class="price__sale"><?php echo wc_price($saleprice); ?></span>
+                                        </p>                      
+                                <?php
+                                    }
+                        ?>
 
                         <?php 
                         $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
