@@ -118,7 +118,7 @@ defined( 'ABSPATH' ) || exit;
 
 							?>
 								<div class="shopcontent__container col-12 col-md-6 col-lg-4 pl-lg-0 px-3 pt-lg-5">                   
-									<a href="<?php the_post_thumbnail_url(); ?>">
+									<a href="<?php the_permalink(); ?>">
 										<img class="shopcontent__image" src="<?php the_post_thumbnail_url(); ?>">
 										<div class="shopcontent__information shopcontent__information<?php echo $count ?>">
 											<p class="shopcontent__name"><?php the_title_attribute();?></p>
