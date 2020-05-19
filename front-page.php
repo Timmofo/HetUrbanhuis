@@ -59,15 +59,42 @@
                             $currentproduct = wc_get_product($product->get_ID());
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id($currentproduct->get_id()), 'single-post-thumbnail' );
                             $price = get_post_meta( $product->get_ID() , '_regular_price', true);
+                            $saleprice = get_post_meta( $product->get_ID() , '_sale_price', true);
+                            
+                            //Calculate the date and see what badge is required.
+                            $postdate = new DateTime( get_the_time(('c'), $currentproduct->get_ID()) );
+                            $now = new DateTime(date('c'));
+                            $inventoryTime = $postdate->diff($now)->format('%a');                 
+                            $class = '';
+
+                            if($saleprice>0){
+                                $class = 'product__sale';
+                            } 
+                            else if((int)$inventoryTime<30){
+                                $class = 'product__new';
+                            }
                             ?>
 
                             <div class="col-12 col-md-4 pr-3 pl-md-0 pr-md-3 mb-4 mb-md-0 mx-auto">
-                                <a href="<?php echo $currentproduct->get_permalink(); ?>">
+                                <a class="<?php echo $class?>" href="<?php echo $currentproduct->get_permalink();?>">
                                     <img class="frontpage__productimage mb-1 mb-md-0" src="<?php echo $image[0] ?>">
                                     <div class="pt-2 pt-lg-3 frontpage__producttext<?php echo $count ?>">
                                         <p class="shopcontent__name"><?php echo $currentproduct->get_name(); ?></p>
                                         <p class="shopcontent__tag">Zaden</p>
-                                        <p class="shopcontent__price"><?php echo wc_price($price); ?></p>
+                                        <?php 
+                                            if ($saleprice == 0){
+                                        ?>
+                                                <p class="shopcontent__price"><?php echo wc_price($price); ?></p>
+                                        <?php
+                                            } else {
+                                        ?>        
+                                                <p class="shopcontent__price">
+                                                    <span class="price__oldprice"><?php echo wc_price($price); ?></span>
+                                                    <span class="price__sale"><?php echo wc_price($saleprice); ?></span>
+                                                </p>                      
+                                        <?php
+                                            }
+                                        ?>
                                     </div>
                                 </a>
                             </div>

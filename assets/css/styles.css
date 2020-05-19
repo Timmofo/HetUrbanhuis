@@ -685,6 +685,28 @@ a:hover{
     margin: 0;
 }
 
+.product__sale::before{
+    background:url("../images/sale_badge.png");
+    background-size: 30px 100px;
+    height: 100px;
+    width: 30px;
+    position: absolute;
+    content: "";
+    left: 1.5em;
+    top: -2px;
+}
+
+.product__new::before{
+    background:url("../images/new_badge.png");
+    background-size: 30px 100px;
+    height: 100px;
+    width: 30px;
+    position: absolute;
+    content: "";
+    left: 1.5em;
+    top: -2px;
+}
+
 /*Contact Page Styling*/
 .contact__foto{
     width: 100%;

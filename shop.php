@@ -84,10 +84,24 @@
                     $image = wp_get_attachment_image_src( get_post_thumbnail_id($currentproduct->get_id()), 'single-post-thumbnail' );
                     $price = get_post_meta( $product->get_ID() , '_regular_price', true);
                     $saleprice = get_post_meta( $product->get_ID() , '_sale_price', true);
+
+                    //Calculate the date and see what badge is required.
+                    $postdate = new DateTime( get_the_time(('c'), $currentproduct->get_ID()) );
+                    $now = new DateTime(date('c'));
+                    $inventoryTime = $postdate->diff($now)->format('%a');                 
+                    $class = '';
+
+                    if($saleprice>0){
+                        $class = 'product__sale';
+                    } 
+                    else if((int)$inventoryTime<30){
+                        $class = 'product__new';
+                    }
+
                     ?>
 
                     <div class="shopcontent__container col-6 col-lg-4 pl-1 pl-md-3 pl-lg-0 pr-1 pr-md-3">                   
-                        <a href="<?php echo $currentproduct->get_permalink(); ?>">
+                        <a class="<?php echo $class ?>" href="<?php echo $currentproduct->get_permalink(); ?>">
                             <img class="shopcontent__image" src="<?php echo $image[0] ?>">
                             <div class="shopcontent__information shopcontent__information<?php echo $count ?>">
                                 <?php

@@ -114,13 +114,25 @@ defined( 'ABSPATH' ) || exit;
 							 */
 							do_action( 'woocommerce_shop_loop' );
 							
-							$price = get_post_meta( get_the_ID(), '_price', true );
 							$price = get_post_meta( get_the_ID() , '_regular_price', true);
 							$saleprice = get_post_meta( get_the_ID() , '_sale_price', true);
 
+                            //Calculate the date and see what badge is required.
+                            $postdate = new DateTime( get_the_time(('c'), get_the_ID()) );
+                            $now = new DateTime(date('c'));
+                            $inventoryTime = $postdate->diff($now)->format('%a');                 
+                            $class = '';
+
+                            if($saleprice>0){
+                                $class = 'product__sale';
+                            } 
+                            else if((int)$inventoryTime<30){
+                                $class = 'product__new';
+                            }
+
 							?>
-								<div class="shopcontent__container col-12 col-md-6 col-lg-4 pl-lg-0 px-3 pt-lg-5">                   
-									<a href="<?php the_permalink(); ?>">
+								<div class="shopcontent__container col-12 col-md-6 col-lg-4 pl-lg-0 px-3 mt-lg-5">                   
+									<a class="<?php echo $class ?>" href="<?php the_permalink(); ?>">
 										<img class="shopcontent__image" src="<?php the_post_thumbnail_url(); ?>">
 										<div class="shopcontent__information shopcontent__information<?php echo $count ?>">
 											<p class="shopcontent__name"><?php the_title_attribute();?></p>
