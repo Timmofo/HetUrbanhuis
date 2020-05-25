@@ -26,6 +26,60 @@ function my_theme_wrapper_end() {
 }
 //Woocommerce end
 
+//enqueue scripts
+function load_javascript() {
+    wp_enqueue_script('jquery');
+
+    wp_register_script('bootstrapjs', get_template_directory_uri(). '/assets/js/bootstrap.bundle.min.js', 'jquery', false, true);
+    wp_enqueue_script('bootstrapjs');
+
+    wp_register_script('main_js', get_template_directory_uri(). '/assets/js/script.js', array(), false, true);
+    wp_enqueue_script('main_js');   
+    }
+add_action( 'wp_enqueue_scripts', 'load_javascript');  
+
+/*
+    <!-- Fix these links! -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- Bootstrap bundle, Note: no JQuery not included -->
+    <script src="<?php echo get_bloginfo( 'template_directory' );?>/assets/js/bootstrap.bundle.min.js"></script>
+
+    <?php wp_footer(); ?>
+
+    <!-- JS File -->
+    <script src="<?php echo get_bloginfo( 'template_directory' );?>/assets/js/script.js"></script>
+*/
+
+//enqueue styles
+function load_css() {
+    wp_register_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), false, 'all');
+    wp_enqueue_style('bootstrap');
+
+    wp_register_style('google_fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400|Roboto&display=swap', array(), false, 'all');
+    wp_enqueue_style('google_fonts'); 
+
+    wp_register_style('fonts_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css', array(), false, 'all');
+    wp_enqueue_style('fonts_awesome');   
+
+    wp_register_style('main_stylesheet', get_template_directory_uri() . '/assets/css/styles.css', array(), false, 'all');
+    wp_enqueue_style('main_stylesheet');    
+}
+add_action( 'wp_enqueue_scripts', 'load_css' ); 
+
+/*
+        <!-- Bootstrap CSS File -->
+        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory');?>/assets/css/bootstrap.min.css">
+        <!-- Main CSS File -->
+        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory');?>/assets/css/styles.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto&display=swap" rel="stylesheet">
+
+        <!-- FontsAwesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+*/
+
 //Function to get all categories with exceptions
 function the_category_filter($thelist,$separator=' ') {
     if(!defined('WP_ADMIN')) {
